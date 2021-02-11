@@ -72,6 +72,10 @@ a{
       li{
         margin-left: 20px;
 
+        @include mq(sp){
+          margin: 0 10px;
+        }
+
         a{
           font-size: 1.6rem;
           font-weight: bold;

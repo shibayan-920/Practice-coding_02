@@ -132,6 +132,12 @@ a {
   margin-left: 20px;
 }
 
+@media (max-width: 767px) {
+  .header-nav ul li {
+    margin: 0 10px;
+  }
+}
+
 .header-nav ul li a {
   font-size: 1.6rem;
   font-weight: bold;
