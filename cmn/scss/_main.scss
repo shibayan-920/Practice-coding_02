@@ -42,12 +42,21 @@ a{
 .header{
   height: 80px;
   background-color: #fff;
+
+  @include mq(sp){
+    height: 100px;
+  }
   
   &-inner{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
+
+    @include mq(sp){
+      flex-direction: column;
+      justify-content: space-around;
+    }
   }
 
   .site-logo{
@@ -95,12 +104,21 @@ a{
     margin-top: 36px;
     margin-bottom: 6px;
     letter-spacing: 0.03em;
+
+    @include mq(sp){
+      font-size: 5rem;
+    }
     }
   
   &__copy-sub{
     line-height: 1.58;
     font-size: 1.6rem;
     font-weight: bold;
+
+    @include mq(sp){
+      line-height: 2.5;
+      font-size: 2rem;
+    }
   }
 
 }
@@ -124,11 +142,17 @@ a{
   &-wrap{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   .box{
     width: 31.6%;
     box-shadow: 0px 3px 6px #00000029;
+
+    @include mq(sp){
+      width: 100%;
+      margin-bottom: 20px;
+    }
 
     &__figcaption{
       display: flex;
@@ -141,6 +165,10 @@ a{
     &__txt{
       font-size: 1.8rem;
       font-weight: bold;
+
+      @include mq(tab-only){
+        font-size: 1.6rem;
+      }
     }
   }
 
@@ -183,6 +211,10 @@ a{
 
   &__txt{
     line-height: 1.75;
+
+    @include mq(sp){
+      font-size: 1.5rem;
+    }
   }
 
   &__btn{
@@ -191,8 +223,12 @@ a{
     padding: 1.8rem 0;
     background-color: #83032A;
     border-radius: 5px;
-    width: 210px;
+    width: 60%;
     margin: 40px auto 0;
+
+    @include mq(sp){
+      width: 80%;
+    }
 
     &:hover{
       opacity: 0.8;
@@ -212,5 +248,9 @@ a{
   &__copy{
     font-size: 1.4rem;
     letter-spacing: 0.02em;
+
+    @include mq(sp){
+      font-size: 1.2rem;
+    }
   }
 }
