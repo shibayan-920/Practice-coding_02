@@ -1,0 +1,216 @@
+// base
+html{
+  font-size: 62.5%;
+}
+body {
+  font-family: "Helvetica Neue",
+    Arial,
+    "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans",
+    Meiryo,
+    sans-serif;
+  color: $color-font;
+  font-size: 1.6rem;
+  font-weight: 400;
+  background-color: #fff;
+  -webkit-text-size-adjust: 100%;/*スマホ横時、文字が大きくならない*/
+  line-height: 1.5;
+}
+img{
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+  border: none;
+}
+a{
+  text-decoration: none;
+  color: $color-font;
+}
+// ーーーーーーーーーーーーーーーーーーーーーーー
+// 共通　inner
+// ーーーーーーーーーーーーーーーーーーーーーーー
+.inner{
+  width: $width-inner;
+  max-width: 100%;/*小さい画面でもはみ出さないように*/
+  margin: auto;
+  height: 100%;
+}
+
+// ーーーーーーーーーーーーーーーーーーーーーーー
+// ヘッダー
+// ーーーーーーーーーーーーーーーーーーーーーーー
+.header{
+  height: 80px;
+  background-color: #fff;
+  
+  &-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  .site-logo{
+    width: 180px;
+    height: 40px;
+  }
+
+  &-nav{
+    ul{
+      display: flex;
+      justify-content: space-between;
+
+      li{
+        margin-left: 20px;
+
+        a{
+          font-size: 1.6rem;
+          font-weight: bold;
+          display: block;
+          &:hover{
+            opacity: 0.8;
+            transition: .3s;
+          }
+        }
+      }
+    }
+  }
+}
+// ーーーーーーーーーーーーーーーーーーーーーーー
+// メインビュー
+// ーーーーーーーーーーーーーーーーーーーーーーー
+.fv{
+  height: 551px;
+  background: url(../img/austin-distel-wawEfYdpkag-unsplash@2x.png) no-repeat center /cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  
+  &__copy{
+    font-size: 3.4rem;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-top: 36px;
+    margin-bottom: 6px;
+    letter-spacing: 0.03em;
+    }
+  
+  &__copy-sub{
+    line-height: 1.58;
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+
+}
+// ーーーーーーーーーーーーーーーーーーーーーーー
+//　challenge
+// ーーーーーーーーーーーーーーーーーーーーーーー
+.challenge{
+
+  &-inner{
+    padding: 60px 0 41px;
+  }
+
+  &__ttl{
+    font-size: 3.2rem;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  &-wrap{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .box{
+    width: 31.6%;
+    box-shadow: 0px 3px 6px #00000029;
+
+    &__figcaption{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 20px;
+      height: 167px;
+    }
+
+    &__txt{
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+  }
+
+  &__btn{
+    display: block;
+    width: 310px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    box-shadow: 0px 3px 6px #00000029;
+    padding: 1.1rem 0;
+    text-align: center;
+    margin: 46px auto;
+    border-radius: 5px;
+
+    &:hover{
+      opacity: 0.8;
+      transition: .3s;
+    }
+  }
+}
+// ーーーーーーーーーーーーーーーーーーーーーーー
+// contact
+// ーーーーーーーーーーーーーーーーーーーーーーー
+.contact{
+  background: url(../img/tim-bogdanov-4uojMEdcwI8-unsplash@2x.png)no-repeat center /cover;
+  padding: 60px 20px 42px;
+  color: #fff;
+  text-align: center;
+
+  &-inner{
+    width: 350px;
+  }
+
+  &__ttl{
+    font-size: 3.6rem;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 47px;
+  }
+
+  &__txt{
+    line-height: 1.75;
+  }
+
+  &__btn{
+    display: block;
+    color: #fff;
+    padding: 1.8rem 0;
+    background-color: #83032A;
+    border-radius: 5px;
+    width: 210px;
+    margin: 40px auto 0;
+
+    &:hover{
+      opacity: 0.8;
+      transition: .3s;
+    }
+  }
+}
+// ーーーーーーーーーーーーーーーーーーーーーーー
+// フッター
+// ーーーーーーーーーーーーーーーーーーーーーーー
+.footer{
+  background-color: #333;
+  color: #fff;
+  padding: 30px 20px;
+  text-align: center;
+
+  &__copy{
+    font-size: 1.4rem;
+    letter-spacing: 0.02em;
+  }
+}
